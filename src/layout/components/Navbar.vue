@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
+    <!-- <hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" /> -->
 
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
@@ -48,7 +48,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
-import Hamburger from '@/components/Hamburger'
+// import Hamburger from '@/components/Hamburger'
 import ErrorLog from '@/components/ErrorLog'
 import Screenfull from '@/components/Screenfull'
 import SizeSelect from '@/components/SizeSelect'
@@ -57,7 +57,7 @@ import Search from '@/components/HeaderSearch'
 export default {
   components: {
     Breadcrumb,
-    Hamburger,
+    // Hamburger,
     ErrorLog,
     Screenfull,
     SizeSelect,
@@ -90,21 +90,22 @@ export default {
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
 
-  .hamburger-container {
-    line-height: 46px;
-    height: 100%;
-    float: left;
-    cursor: pointer;
-    transition: background .3s;
-    -webkit-tap-highlight-color:transparent;
+  // .hamburger-container {
+  //   line-height: 46px;
+  //   height: 100%;
+  //   float: left;
+  //   cursor: pointer;
+  //   transition: background .3s;
+  //   -webkit-tap-highlight-color:transparent;
 
-    &:hover {
-      background: rgba(0, 0, 0, .025)
-    }
-  }
+  //   &:hover {
+  //     background: rgba(255, 254, 254, 0.025)
+  //   }
+  // }
 
   .breadcrumb-container {
     float: left;
+    margin-left: 20px;
   }
 
   .errLog-container {

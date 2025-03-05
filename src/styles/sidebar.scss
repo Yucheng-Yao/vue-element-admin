@@ -1,22 +1,32 @@
 #app {
-
+    .first-sidebar {
+      width: 81px; 
+      background-color: #1f2d3d;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+      flex-direction: column;
+      text-align: center;
+    }
   .main-container {
     min-height: 100%;
     transition: margin-left .28s;
-    margin-left: $sideBarWidth;
+    margin-left: $sideBarWidth + 80px;
     position: relative;
   }
 
   .sidebar-container {
     transition: width 0.28s;
-    width: $sideBarWidth !important;
+    width: $sideBarWidth  !important;
     background-color: $menuBg;
     height: 100%;
     position: fixed;
     font-size: 0px;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 80px;
     z-index: 1001;
     overflow: hidden;
 
@@ -97,7 +107,7 @@
     }
 
     .main-container {
-      margin-left: 54px;
+      margin-left: 54px + 80px;
     }
 
     .submenu-title-noDropdown {
